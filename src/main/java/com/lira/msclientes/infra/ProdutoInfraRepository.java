@@ -1,0 +1,50 @@
+package com.lira.msclientes.infra;
+
+import com.lira.msclientes.application.repository.ProdutoRepository;
+import com.lira.msclientes.domain.Produto;
+import com.lira.msclientes.handler.APIException;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.UUID;
+@Repository
+@RequiredArgsConstructor
+@Log4j2
+public class ProdutoInfraRepository implements ProdutoRepository {
+    private final ProdutoSpringDataJPARepository produtoSpringDataJPARepository;
+
+//    @Override
+//    public Produto saveProduto(Produto produto) {
+//        log.info("[start] ProdutoInfraRepository - saveProduto");
+//        produtoSpringDataJPARepository.save(produto);
+//        log.info("[finish] ProdutoInfraRepository - saveProduto");
+//        return produto;
+//    }
+
+//    @Override
+//    public List<Produto> getAllProdutos() {
+//        log.info("[start] ProdutoInfraRepository - getAllProdutos");
+//        List<Produto> todosProdutos = produtoSpringDataJPARepository.findAll();
+//        log.info("[finish] ProdutoInfraRepository - getAllProdutos");
+//        return todosProdutos;
+//    }
+
+//    @Override
+//    public Produto getProdutoById(UUID idProduto) {
+//        log.info("[start] ProdutoInfraRepository - getProdutoById");
+//        Produto produto = produtoSpringDataJPARepository.findById(idProduto)
+//                .orElseThrow(()-> APIException.build(HttpStatus.NOT_FOUND, "Produto Não encontrado para o idProduto fornecido " + idProduto));
+//        log.info("[finish] ProdutoInfraRepository - getProdutoById");
+//        return produto;
+//    }
+
+//    @Override
+//    public void deletaProduto(Produto produto) {
+//        log.info("[start] ProdutoInfraRepository - deletaProduto");
+//        produtoSpringDataJPARepository.delete(produto);
+//        log.info("[finish] ProdutoInfraRepository - deletaProduto");
+//    }
+}
