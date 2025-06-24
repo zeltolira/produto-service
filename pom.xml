@@ -6,17 +6,17 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.5</version>
+		<version>3.3.0</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.github.joanersoncosta</groupId>
-	<artifactId>api-usuario</artifactId>
+	<groupId>com.lira</groupId>
+	<artifactId>msprodutos</artifactId>
 	<version>1.1.0</version>
 	<name>api-usuario</name>
 	<description>Microsserviço de Usuario</description>
 	<properties>
 		<java.version>17</java.version>
-		<spring-cloud.version>2021.0.0</spring-cloud.version>
+		<spring-cloud.version>2023.0.2</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>

@@ -8,6 +8,7 @@ import com.lira.msclientes.application.api.response.ProdutoResponse;
 import com.lira.msclientes.application.service.ProdutoService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
