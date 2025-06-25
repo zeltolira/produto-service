@@ -26,7 +26,7 @@ public class ProdutoController implements ProdutoApi {
         log.info("[start] ProdutoController - postProduto");
         ProdutoResponse produtoCriado = produtoService.postProduto(produtoRequest);
         log.info("[finish] ProdutoController - postProduto");
-        return null;
+        return produtoCriado;
     }
 
     @Override
